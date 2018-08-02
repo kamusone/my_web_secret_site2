@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1> YO Mouss! 😎</h1>
+    <p> Voici la question question du jour:
+      quelle est la quesion de l'univers?
+      tu veux connaitre la réponse ?
+    <p>Connecte-toi vite à ta session  :</p>
+
+    <div class="row justify-content-center">
+
+    <div class="col-lg-8">
+    	<%= form_tag '/form_tag', method: "post" do %>
+
+
+    		<div class="form-group">
+    			<%= label_tag(:email, "Ton email :") %>
+    			<%= email_field_tag(:email, nil, { class: 'form-control' }) %>
+    		</div>
+
+    		<div class="form-group">
+    			<%= label_tag(:password, "MDP") %>
+    			<%= text_area_tag(:password, nil , { rows: 1, class: 'form-control' } ) %>
+    		</div>
+
+    		<%= submit_tag("Connexion", class: 'btn btn-primary') %>
+
+    	<% end %>
+    </div>
+    </div>
+  </body>
+</html>
+
+<h1>LaPageSecrete#new</h1>
+<p>Find me in app/views/la_page_secrete/new.html.erb</p>
