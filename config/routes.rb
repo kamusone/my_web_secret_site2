@@ -13,9 +13,12 @@ Rails.application.routes.draw do
    get  '/about',   to: 'la_page_secrete#about'
    get  '/contact', to: 'la_page_secrete#contact'
    get  '/signup',  to: 'users#new'
+   post '/signup',   to: 'users#create'
    get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
+  get '/question',  to: 'static_page#question'
+  get '/reponse', to: 'static_page#reponse'
 
    resources :users
 

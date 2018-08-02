@@ -15,3 +15,4 @@ class LaPageSecreteController < ApplicationController
   def destroy
     @user =User.destroy
   end
+end 
