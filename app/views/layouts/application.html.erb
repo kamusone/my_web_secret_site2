@@ -20,11 +20,12 @@
       <div class="container">
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "home",   '#' %></li>
-            <li><%= link_to "help",   '#' %></li>
-            <li><%= link_to "about", '#' %></li>
-            <li><%= link_to "contact", '#' %></li>
-            <li><%= link_to "signup", '#' %></li>
+            <li><%= link_to "home",   '/' %></li>
+            <li><%= link_to "help",   'help' %></li>
+            <li><%= link_to "about", 'about' %></li>
+            <li><%= link_to "contact", 'contact' %></li>
+            <li><%= link_to "signup", '/users/new' %></li>
+            <li><%= link_to "log_in", '/sessions/new' %></li>
           </ul>
         </nav>
       </div>
@@ -34,6 +35,6 @@
 
   <body>
     <%= yield %>
-    
+
   </body>
 </html>
