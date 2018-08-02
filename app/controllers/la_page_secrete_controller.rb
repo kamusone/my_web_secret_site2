@@ -13,6 +13,15 @@ class LaPageSecreteController < ApplicationController
   def error
   end
   def destroy
-    @user =User.destroy 
+    @user =User.destroy
   end
+
+  def help
+  end
+  def about
+  end
+  def contact
+  end
+  def signup
+  end  
 end

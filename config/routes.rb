@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/show'
+  get 'users/new'
   root 'static_page#home'
 
   get '/new' => 'la_page_secrete#new'
@@ -6,5 +8,10 @@ Rails.application.routes.draw do
   #get '/form_tag' => 'la_page_secrete'
 #post '/form_tag' => 'user#tag_create'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+   get  '/help',    to: 'la_page_secrete#help'
+   get  '/about',   to: 'la_page_secrete#about'
+   get  '/contact', to: 'la_page_secrete#contact'
+   get  '/signup',  to: 'users#new'
+   resources :users
 
 end
