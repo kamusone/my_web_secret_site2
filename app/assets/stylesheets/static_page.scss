@@ -3,3 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* mixins, variables, etc. */
+section.background
+{
+
+  background-size: 100% auto;
+  height: 700px;
+  background-repeat: no-repeat;
+background-image: url('https://pagecrafter.com/wp-content/uploads/2013/03/myheads.jpg')
+}
+
+.rep
+{color: red}
+
+.h1
+{color: white}
